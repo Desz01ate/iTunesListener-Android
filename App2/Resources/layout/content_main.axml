@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/content_main_image"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_main_name"
+            android:gravity="center"
+            android:layout_marginTop="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_main_album"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_main_artist"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:text="Previous"
+            android:layout_width="wrap_content"
+            android:layout_height="63.0dp"
+            android:id="@+id/content_main_prev"
+            android:layout_marginTop="200.0dp" />
+        <Button
+            android:text="Play/Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="63.0dp"
+            android:id="@+id/content_main_play_pause"
+            android:layout_marginTop="200.0dp" />
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="63.0dp"
+            android:id="@+id/content_main_next"
+            android:layout_marginTop="200.0dp" />
+    </LinearLayout>
+</RelativeLayout>
